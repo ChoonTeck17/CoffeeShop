@@ -21,6 +21,10 @@
             <li class="nav-item"> 
                 <a class="nav-link" href="buyProduct.php">Shop</a>
             </li>
+            <li class="nav-item"> 
+                <a class="nav-link" href="LocateUs.php">Locate Us</a>
+            </li>
+
 
             <?php
                     $con = mysqli_connect("localhost", "root", "", "cart");

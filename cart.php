@@ -67,7 +67,7 @@
                             <form action = '' method = 'post'>
                                 <input type='hidden' name='qty_id' class='form-control'  value='" . $row["id"] . "'><br>
                                 <input type='number' id='quantity' name='quantity_qty' class='form-control' value='" . $row['c_quantity'] . "'><br>
-                                <button type='submit' name='update_quantity' class='btn btn-primary'>Update</button>
+                                <button type='submit' name='update_quantity' class='btn btn-primaryc_des'>Update</button>
                             </form>
                         </td>"; 
                     $subtotal = $row["c_price"] * $row['c_quantity'];
