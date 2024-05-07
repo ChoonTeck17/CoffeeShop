@@ -6,7 +6,7 @@
 </head>
 <body>
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="index.php">KCM Gadgets Store</a>
+    <a class="navbar-brand" href="Home.php">Sunlight Cafe</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -16,10 +16,10 @@
                 <a class="nav-link" href="AddProduct.php">Add product</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="viewProduct.php">View Product</a>
+                <a class="nav-link" href="ViewProduct.php">View Product</a>
             </li>
             <li class="nav-item"> 
-                <a class="nav-link" href="buyProduct.php">Shop</a>
+                <a class="nav-link" href="BuyProduct.php">Cafe</a>
             </li>
             <li class="nav-item"> 
                 <a class="nav-link" href="LocateUs.php">Locate Us</a>
@@ -32,7 +32,7 @@
                     $row_count = mysqli_num_rows($select_product);
             ?>
             <li class="nav-item">
-                <a class="nav-link" href="cart.php" tabindex="-1">
+                <a class="nav-link" href="Cart.php" tabindex="-1">
                 <i class="fa-solid fa-cart-shopping"></i>
             <span>
             <sup>            

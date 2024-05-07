@@ -27,7 +27,7 @@
     </style>
 </head>
 <body>
-    <?php include("header.php"); ?>
+    <?php include("Header.php"); ?>
 
     <div class="content">
     <div class="container mt-5">
@@ -35,10 +35,10 @@
     <div class="col-md-6">
       <h1>Welcome KCM gadgets store</h1>
       <p>We offer a wide range of computer gadgets and accessories to enhance your computing experience.</p>
-      <a href="buyProduct.php" class="btn btn-primary">Shop Now</a>
+      <a href="BuyProduct.php" class="btn btn-primary">Shop Now</a>
     </div>
     <div class="col-md-6">
-      <img src="image/pc.jpg" alt="Computer Gadgets" class="img-fluid">
+      <img src="image/pc.jpg" alt="Coffee" class="img-fluid">
     </div>
   </div>
 </div>

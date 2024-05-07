@@ -22,7 +22,7 @@ if(isset($_GET['delete'])){
     if($query){
         echo "<script>
         alert('Product Deleted Successfully');
-        window.location.href = 'viewProduct.php';
+        window.location.href = 'ViewProduct.php';
       </script>";
 
     }else{

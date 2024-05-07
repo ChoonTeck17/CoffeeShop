@@ -42,7 +42,7 @@
                         <div class="card-body p-4 mb-4 bg-white ">
                         <div class="text-center">
 
-                            <img src="image/<?php echo "{$row['p_image']}"; ?>" class="card-img-top img-fluid" alt="Product Image">
+                            <img src="Image/Products<?php echo "{$row['p_image']}"; ?>" class="card-img-top img-fluid" alt="Product Image">
                             <h4 class="card-title"><?php echo "{$row['p_name']}";?></h4>
                             <h6 class> Price $ <?php echo "{$row['p_price']}"; ?></h6><i></i>
                             <form method="post">
@@ -72,7 +72,7 @@
 </html>
 
 <?php
-    include("db.php");
+    include("Db.php");
 
     if(isset($_POST['add_to_cart'])){
         $product_name=$_POST['p_name'];

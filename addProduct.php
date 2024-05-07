@@ -20,7 +20,7 @@
     ?>
     <div class="container">
         <h2 class="mt-5">Add Product</h2>
-        <form method="post" action="addProduct.php" class="mt-4" enctype="multipart/form-data">
+        <form method="post" action="AddProduct.php" class="mt-4" enctype="multipart/form-data">
             <div class="mb-3">
                 <label for="name" class="form-label">Product Name:</label>
                 <input type="text" id="pname" name="pname" class="form-control" required>
@@ -51,7 +51,7 @@
 </html>
 
 <?php 
-include("db.php");
+include("Db.php");
 ?>
 
 <?php
@@ -68,7 +68,7 @@ if(isset($_POST['add'])){
         
         // Check if the file format is allowed
         if($imageFileType == "jpg" || $imageFileType == "jpeg" || $imageFileType == "png") {
-            $folder = 'image/'.$image;
+            $folder = 'Image/Products/'.$image;
             
             // Perform the database insertion
             $query = mysqli_query($con,"INSERT INTO products (p_name, p_price, p_description, p_image) VALUES ('$pname','$price','$description','$image')")

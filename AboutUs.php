@@ -3,35 +3,52 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Us - Demon Slayer IT Store</title>
+  <title>About Us - Sunlight Cafe</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" >
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
 </head>
 <body>
-  
-<?php 
-    include("header.php");
+<?php
+  include("Header.php");
 ?>
-  <!-- Page Content -->
+
+<section id="about-us" class="py-5">
   <div class="container">
     <div class="row">
-      <div class="col-lg-12">
-        <h1 class="mt-5">About Us</h1>
-        <p>Welcome to Demon Slayer IT Store! We are your one-stop destination for all your computer and IT needs.</p>
-        <p>At Demon Slayer IT Store, we offer a wide range of products including computers, laptops, accessories, peripherals, and more. Our goal is to provide high-quality products and exceptional customer service to meet your technology needs.</p>
-        <p>With years of experience in the industry, our knowledgeable staff is here to assist you in finding the perfect solution for your home or business. Whether you're a casual user, a gaming enthusiast, or a professional, we have the products and expertise to help you.</p>
-        <p>Thank you for choosing Demon Slayer IT Store. We look forward to serving you!</p>
+      <div class="col-lg-6">
+        <h2 class="mb-4">Welcome to Sunlight Cafe</h2>
+        <p>We are passionate about serving high-quality coffee and creating a cozy atmosphere for our customers.</p>
+        <p>Our café is more than just a place to grab a cup of coffee; it's a community hub where people come together to relax, work, and socialize.</p>
+      </div>
+      <div class="col-lg-6">
+        <!-- Slideshow -->
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="slide1.jpg" class="d-block w-100" alt="Slide 1">
+            </div>
+            <div class="carousel-item">
+              <img src="slide2.jpg" class="d-block w-100" alt="Slide 2">
+            </div>
+            <div class="carousel-item">
+              <img src="slide3.jpg" class="d-block w-100" alt="Slide 3">
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
+</section>
 
-
+<!-- Footer -->
 <?php
-    include("footer.php");
-?>  
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  include("Footer.php");
+?>
+
+<!-- Bootstrap JS and dependencies -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>

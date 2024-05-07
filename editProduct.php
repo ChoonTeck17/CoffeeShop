@@ -14,7 +14,7 @@
 </head>
 <body>
   <?php
-  include("header.php");
+  include("Header.php");
 
   if(isset($_GET['edit'])){
     $edit_id = $_GET['edit'];
@@ -68,7 +68,7 @@
 </body>
 </html>
 <?php
-  include("db.php");
+  include("Db.php");
 
   if(isset($_POST['edit'])){
     $edit_product_id = $_POST['pid'];
@@ -79,7 +79,7 @@
     $edit_product_image = $_FILES['pimage']['name'];
 
     $edit_product_image_tmp = $_FILES['pimage']['tmp_name'];
-    $edit_product_image_folder = 'image/' .$edit_product_image;
+    $edit_product_image_folder = 'Image/Products/' .$edit_product_image;
 
     $edit_query = "update products set p_name= '$edit_product_name', p_price= '$edit_product_price', p_description='$edit_product_desc', p_image='$edit_product_image' where id = '$edit_product_id'";
     $result= mysqli_query($con,$edit_query); 
@@ -87,7 +87,7 @@
     if($result){
       move_uploaded_file($edit_product_image_tmp, $edit_product_image_folder);
       echo "<script>Swal.fire({ title: 'Product updated successfully!', icon: 'success' });</script>";
-      echo "<script>setTimeout(function() { window.location.href = 'viewProduct.php'; }, 2000);</script>";
+      echo "<script>setTimeout(function() { window.location.href = 'ViewProduct.php'; }, 2000);</script>";
       }else{
         echo "<script>Swal.fire({ title: 'Failed to delete everything', icon: 'error' });</script>";
       }

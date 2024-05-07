@@ -15,7 +15,7 @@
     </head>
     <body>
         <?php
-            include("header.php");  
+            include("Header.php");  
         ?>
         <br>   <br>   <br>
         <div class="container-fluid">
@@ -74,7 +74,7 @@
  
                     echo "<td class='text-center border border-2'>RM" . $subtotal  ." </td>";
                     echo "<td class='text-center border border-2'><br>                 
-                    <a class='btn btn-danger' href='cart.php?remove=1&id=" . $row['id'] . " role='button'><i class='fa-solid fa-trash me-2'></i>Delete</a>
+                    <a class='btn btn-danger' href='Cart.php?remove=1&id=" . $row['id'] . " role='button'><i class='fa-solid fa-trash me-2'></i>Delete</a>
                 </td>";
                 
                 
@@ -108,7 +108,7 @@
 
                     if($result){
                         echo "<script>Swal.fire({ title: 'Product insert successfully!', icon: 'success' });</script>";
-                        echo "<script>setTimeout(function() { window.location.href = 'cart.php'; }, 2000);</script>";
+                        echo "<script>setTimeout(function() { window.location.href = 'Cart.php'; }, 2000);</script>";
 
                     }else{
                         echo "<script>Swal.fire({ title: 'Failed to delete everything', icon: 'error' });</script>";
@@ -142,7 +142,7 @@
                                     <tbody>
                                         <tr>
                                             <td class="text-left">
-                                                <a class="btn btn-primary" href="buyProduct.php" role="button">Continue Shopping</a>
+                                                <a class="btn btn-primary" href="BuyProduct.php" role="button">Continue Shopping</a>
                                             </td>
                                             <td class="text-center">
                                                 <a class="btn btn-primary" href="#" role="button">Grand total: $'.$grand_total.'</a>
@@ -177,7 +177,7 @@
             echo "<script>Swal.fire({ title: 'Product quantity has been updated!', icon: 'success' });</script>";
             echo "<script>
             setTimeout(function(){
-                window.location.href = 'cart.php'; // Redirect to cart.php after 2 seconds
+                window.location.href = 'Cart.php'; // Redirect to cart.php after 2 seconds
             }, 3000); 
           </script>";
         }else{
@@ -197,7 +197,7 @@
             echo "<script>Swal.fire({ title: 'Product deleted successfully!', icon: 'success' });</script>";
             echo "<script>
             setTimeout(function(){
-                window.location.href = 'cart.php'; // Redirect to cart.php after 2 seconds
+                window.location.href = 'Cart.php'; // Redirect to cart.php after 2 seconds
             }, 3000); 
                  </script>";
            

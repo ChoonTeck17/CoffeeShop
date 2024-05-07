@@ -83,7 +83,7 @@ include("db.php");
                     'success'
                 );
                 setTimeout(function() {
-                    window.location.href = 'index.php';
+                    window.location.href = 'Home.php';
                 }, 2000);
                 // Here you can add code to submit the order or redirect to another page
             }
